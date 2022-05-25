@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function UserInfo({ user }) {
 
-    if (!user) return;
+    if (!user || !user.firstName) return;
 
     return <>
         <div className='flex-div'>
