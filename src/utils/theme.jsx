@@ -11,7 +11,7 @@ export const theme = createTheme({
         },
         button: {
           textTransform: 'none',
-          backgroundColor: 'red',
+          backgroundColor: '#999',
           color: 'white'
         },
       },

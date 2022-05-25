@@ -33,8 +33,7 @@ export default function EditDialog({defaults}) {
                 <Button onClick={handleClickOpen} variant="contained" color="primary" size="small">
                     Edit Profile
                 </Button>
-            </Typography>
-        </ThemeProvider>
+            
 
         <Dialog open={open}>
         
@@ -90,12 +89,15 @@ export default function EditDialog({defaults}) {
                 />
             </DialogContent>
             <DialogActions>
-                <Button onClick={handleCancel}>Cancel</Button>
-                <Button onClick={handleSave} color="success">
+                <Button onClick={handleCancel} variant="text">Cancel</Button>
+                <Button onClick={handleSave} variant="contained" color="primary">
                     Save
                 </Button>
             </DialogActions>
         </Dialog>
+
+        </Typography>
+        </ThemeProvider>
     </>
 
 }
